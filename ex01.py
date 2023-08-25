@@ -42,3 +42,30 @@ print(f"Maior altura do grupo: {max(alturas):.2f} cm")
 print(f"Menor altura do grupo: {min(alturas):.2f} cm") 
 print(f"A quantidade de mulheres é {qtd_mulheres}") 
 print(f"A média da altura dos homens é {sum(alt_homens) / qtd_homens}")
+
+#----------------------------------------------
+mulher = {
+    "alturas": [] 
+
+}
+homem = {
+    "alturas": []
+
+}
+
+for c in range(15):
+    sexo = input("Digite seu gênero[m/h]: ").lower() 
+    altura = float(input("Digite sua altura: ")) 
+    
+    
+    if sexo == "m":
+        mulher["alturas"].append(altura)
+    else:
+        homem["alturas"].append(altura)
+
+total_alturas = homem["alturas"] + mulher["alturas"] 
+
+print(f"Maior altura do grupo: {max(total_alturas):.2f} cm")
+print(f"Menor altura do grupo: {min(total_alturas):.2f} cm") 
+print(f"A quantidade de mulheres é {len(mulher['alturas'])}") 
+print(f"A média da altura dos homens é {sum(homem['alturas']) / len(homem['alturas'])}")
