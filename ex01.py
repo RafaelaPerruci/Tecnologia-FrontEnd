@@ -22,7 +22,7 @@ print(f"A menor altura é {min(total_alturas)} e a maior altura é {max(total_al
 genero = []
 alturas = []
 alt_homens = [] 
-for c in range(3):
+for c in range(15):
     sexo = str(input("Digite o seu genero[m/h]: ")).lower()
     altura = float(input("Digite a sua altura: ")) 
     genero.append(sexo) 
